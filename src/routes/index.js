@@ -1,21 +1,23 @@
 import React from "react";
 import { HashRouter, Route, Link, Switch } from "react-router-dom";
 
-import ReactIndex from "./React/React"; 
-import SpringIndex from "./Spring/Spring";
-import SpringFramework from "./Spring/SpringFramework";
-import Home from "./Home"; 
+import TheoryReact from "./Theory/React/React"; 
+import TheorySpring from "./Theory/Spring/Spring";
+import TheoryWebApplication from "./Theory/WebApplication/WebApplication";
 
-//Route exact path = URL을 지정해주는 것 
-//Component는 해당 URL과 연결되는 페이지를 나타내준다
+import ProjectsReact from "./Projects/React/React";
+import ProjectsSpring from "./Projects/Spring/Spring";
+import ProjectsWebApplication from "./Projects/WebApplication/WebApplication";
 
 export default () => (
     <HashRouter>
         <Switch>
-            <Route exact path="/" component = { Home }/>
-            <Route exact path="/spring" component= { SpringIndex }/>
-            <Route exact path="/react" component= { ReactIndex }/>
-            <Route exact path="/spring/springframework" component={SpringFramework}/>
+            <Route exact path="/Theory/React" component = { TheoryReact }/>
+            <Route exact path="/Theory/Spring" component = { TheorySpring }/>
+            <Route exact path="/Theory/WebApplication" component = {TheoryWebApplication}/>
+            <Route exact path="/Projects/React" component = {ProjectsReact}/>
+            <Route exact path="/Projects/Spring" component = {ProjectsSpring}/>
+            <Route exact path="/Projects/WebApplication" component = {ProjectsWebApplication}/>
         </Switch>
     </HashRouter>
 );

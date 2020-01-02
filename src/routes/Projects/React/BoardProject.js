@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 export default () =>(
     <div>
-      I am at home Now~ See if this working!
+        <h1>Projects>BoardProject</h1>
+        <h3>About React</h3>
+        
+
     </div>
 );
