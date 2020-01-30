@@ -5,7 +5,6 @@ export default () =>(
     <div>
         <h1>Projects</h1>
         <h3>About React</h3>
-        <Link to="./BoardProject">Go to BoardProject</Link>
-
+        <Link to="/Projects/React/BoardProject">Go to BoardProject</Link>
     </div>
 );
